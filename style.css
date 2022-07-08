@@ -43,7 +43,7 @@ h2{
     letter-spacing: var(--spacing);
     
 }
-.intro h2 span{
+.intro h2 span,.purpose h2 span{
     color:hsl(210, 50%, 28%);
     text-transform: uppercase;
 }
