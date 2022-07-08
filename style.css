@@ -83,6 +83,11 @@ li:hover,.logo:hover{
 .author{
     font-size: large;
 }
+.intro, .purpose{
+    margin: 50px 0;
+    display: grid;
+   place-items: center;
+}
 
 @media screen  and (min-width:900px){
     .nav-toggle{
@@ -135,11 +140,7 @@ li:hover,.logo:hover{
     font-family: 'Edu VIC WA NT Beginner', cursive;
    
 }
-.intro, .purpose{
-    margin: 50px 0;
-    display: grid;
-   place-items: center;
-}
+
 
 .des{
     padding: 10px;
