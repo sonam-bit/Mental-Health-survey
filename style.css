@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+    min-height: 90vh;
+    margin: 0;
+    /* background-image: url(./BG.png); */
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+}
+a{
+   
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.logo{
+    color:hsl(204, 26%, 96%);
+    letter-spacing: var(--spacing);
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+h2{
+    letter-spacing: var(--spacing);
+    
+}
+.intro h2 span{
+    color:hsl(210, 50%, 28%);
+    text-transform: uppercase;
+}
+.nav1{
+    background-color:transparent;
+    color:White;
+    box-shadow: 0 10px 10px grey;
+}
+.nav-fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: hsl(210, 50%, 28%);
+    box-shadow: 0 10px 10px grey;
+  
+}
+.container1{
+    height:0;
+    overflow: hidden;
+}
+li{
+   
+    list-style-type: none;
+    padding:10px;
+}
+li:hover,.logo:hover{
+    background-color:hsl(205, 90%, 76%);
+    cursor: pointer;
+    
+}
+.nav-toggle{
+    border: none;
+    background-color: transparent;
+    color:hsl(0, 0%, 100%);
+}
+.author{
+    font-size: large;
+}
+
+@media screen  and (min-width:900px){
+    .nav-toggle{
+        display: none;
+    }
+    .links{
+        display: flex;
+        text-transform: uppercase;
+
+    }
+    .container1{
+        height:auto !important;
+    }
+    .navbar1{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+   
+    
+}
+.form{
+    margin:20px;
+    display: flex;
+   justify-content: center;
+}
+
+#home{
+    min-height: 90vh;
+    background-image: url("./Untitled\ design\ \(1\).png");
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+.saying{
+   
+    margin-top:0;
+    margin-left: 100px;
+    margin-right: 100px;
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color:white;
+    letter-spacing: 0.15rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+   
+}
+.intro, .purpose{
+    margin: 50px 100px;
+    display: grid;
+    place-items: center;
+}
+
+
+.des{
+    padding: 10px;
+    line-height: 1.5rem;
+}
+.footer-section{
+    text-align: center;
+    margin-top: 10px;
+    padding:30px;
+    color: white;
+    background-color: hsl(210, 50%, 28%);;
+}
+.top-link{
+    position:fixed;
+    top: 90vh;
+    left:90vw;
+    cursor: pointer;
+    text-align: center;
+    width: 50px;
+    height:50px;
+    border-radius:100%;
+    background-color: hsl(210, 50%, 28%);;
+    animation: bounce 2s ease-in-out infinite;
+   
+}
+.top-link:hover{
+    color:hsl(204, 26%, 96%);
+}
+.hide-links{
+    visibility: hidden;
+       z-index: -100;
+   }
+.show-links{
+       visibility: visible;
+       z-index: 100;
+}
+@keyframes bounce {
+      0% {transform : scale(0.8);}
+     100% {transform : scale(1.2);}
+       
+}
+   
