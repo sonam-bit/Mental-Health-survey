@@ -155,8 +155,8 @@ li:hover,.logo:hover{
 }
 .top-link{
     position:fixed;
-    top: 90vh;
-    left:90vw;
+     bottom: 8%;
+    right: 7%;
     cursor: pointer;
     text-align: center;
     width: 50px;
