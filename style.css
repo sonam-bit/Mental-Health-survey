@@ -101,6 +101,11 @@ li:hover,.logo:hover{
         justify-content: space-between;
        
     }
+    .intro, .purpose{
+    margin: 50px 100px;
+    display: grid;
+   place-items: center;
+   }
    
     
 }
@@ -112,7 +117,7 @@ li:hover,.logo:hover{
 
 #home{
     min-height: 90vh;
-    background-image: url("./Untitled\ design\ \(1\).png");
+    background-image: url("./Untitled\ design.png");
     background-repeat: no-repeat;
    background-size: cover;
 }
@@ -131,11 +136,10 @@ li:hover,.logo:hover{
    
 }
 .intro, .purpose{
-    margin: 50px 100px;
+    margin: 50px 0;
     display: grid;
-    place-items: center;
+   place-items: center;
 }
-
 
 .des{
     padding: 10px;
